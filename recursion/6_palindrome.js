@@ -1,23 +1,15 @@
-// let n= 3
+let str = "abbbba"
 
-// function calsum(n){
-//     if(n === 1){
-//         return 1
-//     }
-//     return n+calsum(n-1)
-// }
+function palindrome(str) {
+    if (str[0] != str[str.length - 1]) {
+        return false
+    }
+    
+    if (str.length == 1||str.length == 2 && str[0] == str[str.length - 1]) {
+        return true
+    }
 
-// console.log(calsum(n));
+    return palindrome(str.slice(1, str.length - 1))
+}
 
-
-// let n = 2
-// let power = 2
-
-// function powerof(number,power){
-//     if(power==1){
-//         return number
-//     }
-//     return number*powerof(number,power-1)
-// }
-
-// console.log(powerof(n,power));
+console.log(palindrome(str));

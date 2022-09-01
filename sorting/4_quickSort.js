@@ -3,7 +3,7 @@ function partition(start, end){
     let i = start
     let j = end
 
-    let pivot = arr[]
+    let pivot = arr[0]
 
     while(i<j){
         while(arr[i]<=pivot) i++
