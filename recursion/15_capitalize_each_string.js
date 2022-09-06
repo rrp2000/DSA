@@ -9,3 +9,5 @@ function capitalizeArr(arr){
 }
 
 console.log(capitalizeArr(arr));
+
+

@@ -1,8 +1,8 @@
-let arr = [2,1,-1,4,-4,3]
+let arr = [-2,-1]
 
 function kadensAlgo(arr){
     let currsum = 0
-    let maxsum = 0
+    let maxsum = -infin
 
     for(let i = 0; i < arr.length; i ++){
         currsum += arr[i]

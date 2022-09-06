@@ -1,0 +1,26 @@
+//swap two numbers without third var
+
+// let a = 5
+// let b = 10
+
+// a = a+b
+// b = a-b
+// a = a-b
+
+// console.log(a,b);
+
+
+// swap two strings without third var
+
+let a = "abc"
+let b = "def"
+
+a = a+b
+b = a.replace(b,"")
+a = a.replace(b,"")
+
+console.log(a,b);
+
+
+
+
