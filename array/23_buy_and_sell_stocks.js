@@ -14,21 +14,21 @@ let arr = [7,1,5,3,6,4]
 
 
 // //using space
-// function maxProfit(arr) {
+function maxProfit(arr) {
 
-//     let a = []
-//     let maxsofar = 0
-//     for (let i = arr.length - 1; i >= 0; i--) {
-//         maxsofar = Math.max(maxsofar, arr[i])
-//     }
-//     console.log(a)
-//     maxsofar = 0
-//     for (let i = 0; i < arr.length; i++) {
-//         let profit = a[i]-arr[i]
-//         maxsofar = Math.max(profit, maxsofar)
-//     }
-//     return maxsofar
-// }
+    let a = []
+    let maxsofar = 0
+    for (let i = arr.length - 1; i >= 0; i--) {
+        maxsofar = Math.max(maxsofar, arr[i])
+    }
+    console.log(a)
+    maxsofar = 0
+    for (let i = 0; i < arr.length; i++) {
+        let profit = a[i]-arr[i]
+        maxsofar = Math.max(profit, maxsofar)
+    }
+    return maxsofar
+}
 
 
 //optimal

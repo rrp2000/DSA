@@ -1,4 +1,4 @@
-let nums = [2,2,2,2]
+let nums = [2,2,2,2  ]
 let target = 8
 
 arr = nums.sort((a,b)=>a-b)

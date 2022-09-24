@@ -1,31 +1,29 @@
+function swap(arr,i,j){
+    let temp = arr[i]
+    arr[i] = arr[j]
+    arr[j] = temp
+}
 
-function partition(start, end){
-    let i = start
-    let j = end
+function partition(arr, start, end){
+    
+    let pivot = arr[end]
+    let i = start -1
 
-    let pivot = arr[0]
-
-    while(i<j){
-        while(arr[i]<=pivot) i++
-        while(arr[j]>pivot) j--
-        console.log(i+" "+j);
-        if(i<j){
-            let temp = arr[i]
-            arr[i] = arr[j]
-            arr[j] = temp
+    for(let j = start;j<end;j++){
+        if(arr[j]<pivot){
+            i++
+            swap(arr,i,j)
         }
-        console.log(arr);
     }
-
-    console.log(j)
-    return j
-
+    swap(arr,i+1, end)
+    console.log(arr);
+    return i+1
 }
 
 function quickSort( arr, start , end){
     if(start<end){
         
-        let pivot = partition(start, end)
+        let pivot = partition(arr, start, end)
         quickSort(arr,start,pivot-1)
         quickSort(arr,pivot+1,end)    
         return arr

@@ -10,7 +10,6 @@ function mergesort(arr, left, right) {
 }
 
 function merge(arr, left, mid, right) {
-    console.log(arr,left,mid,right);
     let tarr1 = arr.slice(left,mid+1)
     let tarr2 = arr.slice(mid+1,right+1)
 

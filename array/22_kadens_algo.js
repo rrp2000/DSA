@@ -2,7 +2,7 @@ let arr = [-2,-1]
 
 function kadensAlgo(arr){
     let currsum = 0
-    let maxsum = -infin
+    let maxsum = -Infinity
 
     for(let i = 0; i < arr.length; i ++){
         currsum += arr[i]
